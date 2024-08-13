@@ -1,0 +1,123 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --background-color: #2d2926;
+  --gradient-one: #d62598;
+  --gradient-two: #c86ba8;
+  --main-color:#93a9d1;
+  --text-color-profile: #f5f7f6;
+  --line-color: #39444a;
+}
+
+body,
+html {
+  height: 100%;
+  background: var(--background-color);
+  font-family: "Poppins", sans-serif;
+}
+/* Start Global Rules */
+ul {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--background-base);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color-alt);
+}
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+input:not([type="submit"]) {
+  border: none;
+  outline: none;
+  caret-color: var(--background-color);
+  border-radius: var(--main-radius);
+  transition: 0.3s;
+  background-color: var(--background-base);
+  color: var(--main-color);
+}
+input:focus::placeholder {
+  font-size: 10px;
+  color: var(--text-subdued);
+  opacity: 0;
+}
+input[type="submit"] {
+  padding: 7px 16px;
+  border-radius: var(--main-radius);
+  background-color: #d9b589;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: var(--main-color-alt);
+}
+textarea {
+  border: none;
+  outline: none;
+  caret-color: var(--background-color);
+  font-size: 14px;
+  transition: 0.3s;
+  resize: none;
+  border-radius: var(--main-radius);
+  background-color: var(--background-base);
+  color: var(--main-color);
+  padding: 10px 10px;
+  min-height: 200px;
+}
+textarea:focus::placeholder {
+  font-size: 10px;
+  color: var(--text-subdued);
+  opacity: 0;
+}
+/* End Global Rules */
+/* Start Selection */
+::selection {
+  color: var(--background-color);
+  background: var(--main-color);
+}
+/* End Selection */
+
+
+/* Start Page */
+.container {}
+.container .profile-section {
+  position: relative;
+}
+.container .profile-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .profile-section .titles {
+  color: var(--text-color);
+  text-align: center;
+}
+.container .profile-section .titles h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+.container .profile-section .titles h2 {
+  background: linear-gradient(to right, var(--gradient-one), var(--gradient-two));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: -20px;
+}
