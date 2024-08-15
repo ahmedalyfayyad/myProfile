@@ -32,7 +32,7 @@ a {
 /* End Global Rules */
 /* Start Selection */
 ::selection {
-  color: #cfc09f;
+  color: #000000;
   background: white;
 }
 /* End Selection */
@@ -61,6 +61,8 @@ a {
 .container .info .logo {
   width: 200px;
   filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  margin-top: -10px;
+
 }
 .container .info h1 {
   background: linear-gradient(
@@ -76,7 +78,7 @@ a {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 .container .info h2 {
   color: white;
