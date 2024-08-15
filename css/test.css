@@ -60,6 +60,7 @@ a {
 }
 .container .info .logo {
   width: 200px;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
 }
 .container .info h1 {
   background: linear-gradient(
@@ -266,7 +267,7 @@ a {
 .snapchat img {
   filter: drop-shadow(0 0 10px rgba(255, 225, 0, 0.7));
 }
-.snapchat::after {
+.snapchat::before {
   content: "";
   width: 200px;
   height: 1px;
@@ -276,9 +277,9 @@ a {
     rgba(255, 255, 255, 0) 100%
   );
   position: absolute;
-  right: 90px;
-  top: -74px;
-  transform: rotate(-134deg)
+  left: -90px;
+  top: -75px;
+  transform: rotate(-133deg);
 }
 /* whatsup  */
 .whatsup {
@@ -291,7 +292,7 @@ a {
 .whatsup img {
   filter: drop-shadow(0 0 10px rgba(0, 255, 64, 0.7));
 }
-.whatsup::after {
+.whatsup::before {
   content: "";
   width: 200px;
   height: 1px;
@@ -301,9 +302,9 @@ a {
     rgba(255, 255, 255, 0) 100%
   );
   position: absolute;
-  right: 226px;
-  top: -40px;
-  transform: rotate(-154deg);
+  left: -193px;
+  top: -23px;
+  transform: rotate(-166deg);
 }
 /* x  */
 .x {
@@ -316,7 +317,7 @@ a {
 .x img {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
 }
-.x::after {
+.x::before {
   content: "";
   width: 200px;
   height: 1px;
@@ -326,7 +327,7 @@ a {
     rgba(255, 255, 255, 0) 100%
   );
   position: absolute;
-  right: 241px;
+  left: -200px;
   top: 30px;
   transform: rotate(-180deg);
 }
@@ -341,7 +342,7 @@ a {
 .github img {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
-.github::after {
+.github::before {
   content: "";
   width: 200px;
   height: 1px;
@@ -351,8 +352,8 @@ a {
     rgba(255, 255, 255, 0) 100%
   );
   position: absolute;
-  right: 192px;
-  top: 122px;
+  left: -170px;
+  top: 117px;
   transform: rotate(-221deg);
 }
 /* telegram  */
@@ -461,17 +462,17 @@ a {
     margin-left: 0;
   }
   .behance::after,
-  .linkedin::before,
-  .facebook::before,
-  .youtube::before,
-  .instagram::before,
-  .gmail::before,
+  .linkedin::after,
+  .facebook::after,
+  .youtube::after,
+  .instagram::after,
+  .gmail::after,
   .snapchat::before,
   .whatsup::before,
   .x::before,
   .github::before,
-  .codepen::before,
-  .telegram::before {
+  .codepen::after,
+  .telegram::after {
     display: none;
   }
 }
